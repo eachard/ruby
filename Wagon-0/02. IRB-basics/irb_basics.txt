@@ -1,2 +1,10 @@
 // Copy your irb shell history below 
-dscsdcdfc
+irb(main):029:0> my_name = "Etienne"
+=> "Etienne"
+irb(main):030:0> def say_hi_to(name)
+irb(main):031:1> puts "Hello " + name
+irb(main):032:1> end
+=> nil
+irb(main):034:0> say_hi_to("Etienne")
+Hello Etienne
+=> nil
