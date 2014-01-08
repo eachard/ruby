@@ -1,8 +1,23 @@
 def beersong(nb_at_start)
-  # your code goes here
+
+	while nb_at_start > 2
+		puts "#{nb_at_start} bottles of beer on the wall, #{nb_at_start} bottles of beer!"
+		puts "Take one down, pass it around, #{nb_at_start - 1 } bottles of beer on the wall!" 
+		nb_at_start -= 1
+	end
 end
 
-beersong( ARGV[0] )
+def beersong_fin
+	puts "1 bottle of beer on the wall, 1 bottle of beer!"
+	puts "Take one down, pass it around, no more bottles of beer on the wall"
+
+end
+
+num_bottles = 10
+
+beersong(num_bottles)
+beersong_fin
+
 
 # output (if called with 5 beers) :
 
@@ -16,3 +31,5 @@ beersong( ARGV[0] )
 # => Take one down, pass it around, 1 bottle of beer on the wall!
 # => 1 bottle of beer on the wall, 1 bottle of beer!
 # => Take one down, pass it around, no more bottles of beer on the wall!
+
+
