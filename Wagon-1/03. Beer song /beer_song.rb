@@ -2,7 +2,7 @@ def beersong(nb_at_start)
 
 	while nb_at_start > 2
 		puts "#{nb_at_start} bottles of beer on the wall, #{nb_at_start} bottles of beer!"
-		puts "Take one down, pass it around, #{nb_at_start - 1 } bottles of beer on the wall!" 
+		puts "Take one down, pass it around, #{nb_at_start -1 } bottles of beer on the wall!" 
 		nb_at_start -= 1
 	end
 end
